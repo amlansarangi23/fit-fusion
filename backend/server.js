@@ -8,7 +8,7 @@ const cors = require("cors");
 
 
 const corsOptions = {
-    origin: "https://fit-fusion-frontend.onrender.com/"
+    origin: "https://fit-fusion-frontend.onrender.com"
 }
 
 
