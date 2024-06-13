@@ -7,11 +7,11 @@
 
 /* layout */
 :root {
-  --primary: #1aac83;
+  --primary: #1c4237;
   --error: #e7195a;
 }
 body {
-  background: #f1f1f1;
+  background: #587178;
   margin: 0;
   font-family: "Poppins";
 }
@@ -31,24 +31,23 @@ header a {
   text-decoration: none;
 }
 .pages{
-  max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
+  margin: auto;
+  width: 100%;
 }
 
 /* homepage */
 .home {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px;
+  gap: 2rem;
 }
 .workout-details {
-  background: #fff;
+  background: #c5f3e28c;
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  width: 20rem;
+  height: 10rem;
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
@@ -83,6 +82,7 @@ input {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+  color: #000000;
 }
 form button {
   background: var(--primary);
@@ -103,4 +103,21 @@ div.error {
 }
 input.error{
   border: 1px solid var(--error);
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.workouts::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.workouts{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+form.signup, form.login {
+  max-width: 400px;
+  height: 25rem;
+  margin: 40px auto;
+  border-radius: 4px;
 }
