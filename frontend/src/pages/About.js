@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 
 const About = () => {
     const [loading, setLoading] = useState(true);
@@ -55,7 +56,9 @@ const About = () => {
                 <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
                     <h1 className="sm:text-[2rem] md:text-[3rem] text-white font-bold">Fitness and Body App</h1>
                     <h2 className="sm:text-[1rem] md:text-[2rem] text-white font-bold">Shape Your Body</h2>
-                    <a href='./signup' className="text-slate-300 bg-slate-800 text-sm md:text-xl mt-5 p-4 rounded-md border-2 border-white hover:bg-slate-600">Get Started</a>
+                    <Link to="/signup" className="text-slate-300 bg-slate-800 text-sm md:text-xl mt-5 p-4 rounded-md border-2 border-white hover:bg-slate-600">
+                        Get Started
+                    </Link>
                 </div>
             </div>
 
