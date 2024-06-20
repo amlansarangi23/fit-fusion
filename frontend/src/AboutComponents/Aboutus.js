@@ -1,7 +1,7 @@
 import React from 'react'
 import img from "../assets/img-6.jpg"
 
-const About = () => {
+const Aboutus = () => {
   return (
     <section id='about' className=' w-screen min-h-screen'>
       <div className=' max-container flex justify-center items-center gap-24 padding-hero-y padding-x h-full max-xl:gap-7 max-lg:flex-col'>
@@ -37,4 +37,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Aboutus
