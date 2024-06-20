@@ -4,15 +4,35 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 
-const About = ({ setLoading }) => {
-    useEffect(() => {
-        setLoading(true);
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 2000);
+const About = () => {
+    const [loading, setLoading] = useState(true);
 
-        return () => clearTimeout(timer);
-    }, [setLoading]);
+    useEffect(() => {
+        const handleLoad = () => {
+            setLoading(false);
+        };
+
+        
+        const images = document.querySelectorAll('img');
+        let loadedCount = 0;
+
+        images.forEach((img) => {
+            if (img.complete) {
+                loadedCount++;
+            } else {
+                img.addEventListener('load', () => {
+                    loadedCount++;
+                    if (loadedCount === images.length) {
+                        handleLoad();
+                    }
+                });
+            }
+        });
+
+        if (loadedCount === images.length) {
+            handleLoad();
+        }
+    }, []);
 
     const settings = {
         dots: false,
@@ -24,6 +44,10 @@ const About = ({ setLoading }) => {
         autoplaySpeed: 1000,
         cssEase: "linear"
     };
+
+    if (loading) {
+        return <div className="loading-screen">Loading...</div>;
+    }
 
     return (
         <>
