@@ -40,15 +40,15 @@ const About = () => {
 //         return <div className="loading-screen">Loading...</div>;
 //     }
 
-window.addEventListener("scroll",()=>{
-    const scroll = document.documentElement.scrollTop
-    if(scroll > 405){
-      setNav(true)
-    }
-    else{
-      setNav(false)
-    }
-   })
+// window.addEventListener("scroll",()=>{
+//     const scroll = document.documentElement.scrollTop
+//     if(scroll > 405){
+//       setNav(true)
+//     }
+//     else{
+//       setNav(false)
+//     }
+//    })
 
     return (
         <>
