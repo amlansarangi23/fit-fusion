@@ -18,10 +18,6 @@ const About = () => {
         cssEase: "linear"
     };
 
-    if (loading) {
-        return <div className="loading-screen">Loading...</div>;
-    }
-
     return (
         <>
             <div className="relative text-center">
