@@ -129,7 +129,7 @@ const About = () => {
             <div className="m-10">
                 <iframe className="w-[100%] lg:w-[50%] h-[20rem]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28043.902939255855!2d77.11789537431642!3d28.525052200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f7530181879%3A0x2ade7fe21d9c63a1!2sAnytime%20Fitness!5e0!3m2!1sen!2sin!4v1718032037580!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div> */}
-
+        <div className="w-[100vw] bg-slate-100 p-2">
         <HeroSection />
         <Aboutus />
         <Services />
@@ -140,6 +140,7 @@ const About = () => {
         <TimeSchedule />
         <Contact />
         <Blog />
+        </div>
         </>
     );
 };
