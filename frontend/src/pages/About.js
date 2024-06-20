@@ -1,58 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
-// import { Link } from 'react-router-dom';
-// import AOS from 'aos'
-// import 'aos/dist/aos.css'
-import Aboutus from '../AboutComponents/Aboutus'
-import Services from '../AboutComponents/Services'
-import Client from '../AboutComponents/Client'
-import Gallery from '../AboutComponents/Gallery'
-import TeamMembers from '../AboutComponents/TeamMembers'
-import Offer from '../AboutComponents/Offer'
-import TimeSchedule from '../AboutComponents/TimeSchedule'
-import Contact from '../AboutComponents/Contact'
-import Blog from '../AboutComponents/Blog'
-import HeroSection from '../AboutComponents/HeroSection'
+import Slider from "react-slick";
+import { Link } from 'react-router-dom';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
-// useEffect(()=>{
-//     AOS.init({
-//         offset:200,
-//         duration:500,
-//         easing: 'ease-in-sine'
-//     });
-// }, [])
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 1000,
+        cssEase: "linear"
+    };
 
-//     const settings = {
-//         dots: false,
-//         infinite: true,
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         speed: 2000,
-//         autoplaySpeed: 1000,
-//         cssEase: "linear"
-//     };
-
-//     if (loading) {
-//         return <div className="loading-screen">Loading...</div>;
-//     }
-
-// window.addEventListener("scroll",()=>{
-//     const scroll = document.documentElement.scrollTop
-//     if(scroll > 405){
-//       setNav(true)
-//     }
-//     else{
-//       setNav(false)
-//     }
-//    })
+    if (loading) {
+        return <div className="loading-screen">Loading...</div>;
+    }
 
     return (
         <>
-            {/* <div className="relative text-center">
+            <div className="relative text-center">
                 <img className="w-[100vw] opacity-80" src="/aboutimg.jpg" alt="Fitness" />
                 <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
                     <h1 className="sm:text-[2rem] md:text-[3rem] text-white font-bold">Fitness and Body App</h1>
@@ -128,19 +100,7 @@ const About = () => {
 
             <div className="m-10">
                 <iframe className="w-[100%] lg:w-[50%] h-[20rem]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28043.902939255855!2d77.11789537431642!3d28.525052200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1f7530181879%3A0x2ade7fe21d9c63a1!2sAnytime%20Fitness!5e0!3m2!1sen!2sin!4v1718032037580!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> */}
-        <div className="w-[100vw] bg-slate-100 p-2">
-        <HeroSection />
-        <Aboutus />
-        <Services />
-        <Client />
-        <Gallery />
-        <TeamMembers />
-        <Offer />
-        <TimeSchedule />
-        <Contact />
-        <Blog />
-        </div>
+            </div>
         </>
     );
 };
