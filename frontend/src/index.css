@@ -33,7 +33,7 @@ header a {
 .pages{
   margin: auto;
   width: 100%;
-  p-4
+  padding: 1rem;
 }
 
 
