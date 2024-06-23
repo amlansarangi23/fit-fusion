@@ -20,6 +20,7 @@ const Login = () => {
     <input 
         type="email" 
         onChange={(e) => setEmail(e.target.value)} 
+        placeholder="test@gmail.com"
         value={email}
         className="w-full p-3 mb-5 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-600"
     />
@@ -28,6 +29,7 @@ const Login = () => {
     <input 
         type="password" 
         onChange={(e) => setPassword(e.target.value)} 
+        placeholder="Test@123"
         value={password}
         className="w-full p-3 mb-5 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-600"
     />

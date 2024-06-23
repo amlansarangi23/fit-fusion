@@ -10,7 +10,7 @@ const About = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
@@ -18,9 +18,6 @@ const About = () => {
         cssEase: "linear"
     };
 
-    if (loading) {
-        return <div className="loading-screen">Loading...</div>;
-    }
 
     return (
         <>
