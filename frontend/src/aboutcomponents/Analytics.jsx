@@ -1,15 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
 import WorkoutImage from "../assets/analyticsimg.jpg";
-import backgroundImage from "../assets/aboutimg.jpg"; // Adjust with the correct image path
 
 const Analytics = () => {
-  const heroStyle = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
 
   const buttonStyle =
     "w-[200px] mx-auto py-3 px-10 rounded-xl font-bold mt-4 md:text-xl transition ease-in-out hover:scale-105 bg-emerald-400 text-black hover:bg-emerald-500 active:bg-emerald-600";
@@ -34,11 +26,6 @@ const Analytics = () => {
             fitness goals. Whether it's strength training, cardio, or
             flexibility exercises, our app helps you stay on track.
           </p>
-          <div className="self-center">
-            <Link to="/signup" className={buttonStyle}>
-              Get started
-            </Link>
-          </div>
         </div>
       </div>
     </div>

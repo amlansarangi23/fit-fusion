@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 import backgroundImage from "../assets/aboutimg.jpg";
 
@@ -22,17 +22,23 @@ const Hero = () => {
         <h1 className="text-5xl font-bold sm:text-6xl md:text-7xl">
           Achieve Your Fitness Goals.
         </h1>
-        <div className="mt-4 flex text-xl font-bold sm:text-3xl md:text-4xl">
-          <p className="mr-2 md:mr-3">Effective, Engaging Workouts for</p>
-          <Typewriter
-            words={["Strength", "Cardio", "Flexibility"]}
-            loop={0}
-            cursor={1}
-            typeSpeed={120}
-          />
+        <div className="mt-4 flex flex-col items-center sm:flex-row text-xl font-bold sm:text-3xl md:text-4xl">
+          <p className="mb-2 sm:mb-0 sm:mr-3">
+            Effective, Engaging Workouts for
+          </p>
+          <div className="sm:flex">
+            <Typewriter
+              words={["Strength", "Cardio", "Flexibility"]}
+              loop={0}
+              cursor={1}
+              typeSpeed={120}
+            />
+          </div>
         </div>
+
         <p className="mt-4 w-[90vw] text-xl font-bold text-amber-600 md:text-2xl">
-          Track your progress and achieve fitness milestones with our comprehensive workouts app.
+          Track your progress and achieve fitness milestones with our
+          comprehensive workouts app.
         </p>
         <Link to="/signup" className={buttonStyle}>
           Get started
