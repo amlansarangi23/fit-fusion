@@ -10,6 +10,7 @@ const Hero = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    minHeight: "calc(100vh - 80px)",
   };
 
   const buttonStyle =

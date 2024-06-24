@@ -1,9 +1,9 @@
 import React from "react";
-import SingleUserImage from "../assets/single_user.png";
-import PartnershipImage from "../assets/partnership.png";
-import GroupAccountImage from "../assets/group_account.png";
 
 const Card = ({ cardInfo }) => {
+  const buttonStyle =
+    "w-[200px] mx-auto py-3 px-10 rounded-xl font-bold mt-4 md:text-xl transition ease-in-out hover:scale-105 bg-slate-800 text-white";
+
   return (
     <div className="my-4 w-full rounded-xl p-4 shadow-2xl duration-300 hover:scale-105">
       <img src={cardInfo.imageSource} alt="" className="mx-auto w-20" />
@@ -15,7 +15,7 @@ const Card = ({ cardInfo }) => {
           <li>{cardInfo.usersAllowed}</li>
           <li>{cardInfo.sendUpTo}</li>
         </ol>
-        <Button text="Start trial" className="w-[200px] mx-auto py-3 px-10 rounded-xl font-bold mt-4 md:text-xl transition ease-in-out hover:scale-105 bg-slate-800 text-white" />
+        <button className={buttonStyle}>Start Trial</button>
       </div>
     </div>
   );
