@@ -1,4 +1,8 @@
 import React from "react";
+import SingleUserImage from "../assets/single_user.png";
+import PartnershipImage from "../assets/partnership.png";
+import GroupAccountImage from "../assets/group_account.png";
+import TextButton from "./TextButton";
 
 const Card = ({ cardInfo }) => {
   return (
@@ -12,12 +16,50 @@ const Card = ({ cardInfo }) => {
           <li>{cardInfo.usersAllowed}</li>
           <li>{cardInfo.sendUpTo}</li>
         </ol>
-        <button className="w-[200px] mx-auto py-3 px-10 rounded-xl font-bold mt-4 md:text-xl transition ease-in-out hover:scale-105 bg-emerald-400 text-black hover:bg-emerald-500 active:bg-emerald-600">
-          {cardInfo.buttonText || "Start trial"}
-        </button>
+        <TextButton text="Start trial" type="secondary" />
       </div>
     </div>
   );
 };
 
-export default Card;
+const Cards = () => {
+  return (
+    <div className="w-full bg-white px-4 py-10">
+      <div className="mx-auto grid max-w-screen-xl gap-8 md:grid-cols-3">
+        {/* Hardcoded cards */}
+        <Card
+          cardInfo={{
+            imageSource: SingleUserImage,
+            title: "Single User",
+            price: "$149",
+            storageCapacity: "500 GB Storage",
+            usersAllowed: "1 Granted User",
+            sendUpTo: "Send up to 2 GB",
+          }}
+        />
+        <Card
+          cardInfo={{
+            imageSource: PartnershipImage,
+            title: "Partnership",
+            price: "$199",
+            storageCapacity: "1 TB Storage",
+            usersAllowed: "3 Users Allowed",
+            sendUpTo: "Send up to 10 GB",
+          }}
+        />
+        <Card
+          cardInfo={{
+            imageSource: GroupAccountImage,
+            title: "Group Account",
+            price: "$299",
+            storageCapacity: "5 TB Storage",
+            usersAllowed: "10 Users Allowed",
+            sendUpTo: "Send up to 20 GB",
+          }}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Cards;
