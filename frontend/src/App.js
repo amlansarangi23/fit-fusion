@@ -19,6 +19,10 @@ function App() {
         <div className="pages w-[100vw]">
           <Routes>
             <Route
+              path="/about"
+              element={<About />}
+            />
+            <Route
               path="/"
               element={user ? <Home /> : <Navigate to="/about" />}
             />
@@ -29,15 +33,6 @@ function App() {
             <Route
               path="/signup"
               element={!user ? <Signup /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/about"
-              element={<About />}
-            />
-            {/* Catch-all route for 404 Not Found */}
-            <Route
-              path="*"
-              element={<Navigate to="/" />}
             />
           </Routes>
         </div>
