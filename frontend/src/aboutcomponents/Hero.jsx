@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <div className="hero-container" style={heroStyle}>
-      <div className="top-0 mx-auto mt-[-96px] flex h-screen w-full max-w-screen-xl flex-col items-center justify-center text-center text-white">
+      <div className="mx-auto flex h-screen w-full max-w-screen-xl flex-col items-center justify-center text-center text-white">
         <h1 className="text-5xl font-bold sm:text-6xl md:text-7xl">
           Achieve Your Fitness Goals.
         </h1>
