@@ -2,7 +2,6 @@ import React from "react";
 import SingleUserImage from "../assets/single_user.png";
 import PartnershipImage from "../assets/partnership.png";
 import GroupAccountImage from "../assets/group_account.png";
-import TextButton from "./TextButton";
 
 const Card = ({ cardInfo }) => {
   return (
@@ -16,7 +15,7 @@ const Card = ({ cardInfo }) => {
           <li>{cardInfo.usersAllowed}</li>
           <li>{cardInfo.sendUpTo}</li>
         </ol>
-        <TextButton text="Start trial" type="secondary" />
+        <Button text="Start trial" className="w-[200px] mx-auto py-3 px-10 rounded-xl font-bold mt-4 md:text-xl transition ease-in-out hover:scale-105 bg-slate-800 text-white" />
       </div>
     </div>
   );
