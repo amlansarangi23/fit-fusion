@@ -31,7 +31,7 @@ const Hero = () => {
             typeSpeed={120}
           />
         </div>
-        <p className="mt-4 w-[90vw] text-xl font-bold text-gray-400 md:text-2xl">
+        <p className="mt-4 w-[90vw] text-xl font-bold text-amber-600 md:text-2xl">
           Track your progress and achieve fitness milestones with our comprehensive workouts app.
         </p>
         <Link to="/signup" className={buttonStyle}>
