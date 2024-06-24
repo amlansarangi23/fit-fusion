@@ -1,4 +1,7 @@
 import React from "react";
+import SingleUserImage from "../assets/single_user.png"
+import PartnershipImage from "../assets/partnership.png"
+import GroupAccountImage from "../assets/group_account.png"
 
 const Card = ({ cardInfo }) => {
   const buttonStyle =
