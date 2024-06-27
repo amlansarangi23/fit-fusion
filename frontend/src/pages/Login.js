@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <form className="login bg-slate-400 p-10 border-4 border-slate-700 rounded-md shadow-lg" onSubmit={handleSubmit}>
       <h3 className="text-2xl text-center mb-5 font-semibold text-slate-900">Login</h3>
-
+      <p>use default values for demo<p>
       <label className="block text-slate-800 mb-2">Email address:</label>
       <input 
         type="email" 
