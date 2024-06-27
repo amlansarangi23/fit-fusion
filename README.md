@@ -1,4 +1,4 @@
-# MERN Project with JWT Authentication
+# Workouts Management Project 
 
 This is a full-stack web application built with the MERN stack (MongoDB, Express, React, Node.js) that includes JWT-based authentication.
 
