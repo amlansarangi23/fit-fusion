@@ -33,8 +33,8 @@ Make sure you have the following installed on your system:
 1. **Clone the repository**
 
     ```sh
-    git clone https://github.com/yourusername/mern-jwt-auth.git](https://github.com/amlansarangi23/fit-fusion.git)
-    cd civic-voice
+    git clone https://github.com/amlansarangi23/fit-fusion.git
+    cd fit-fusion
     ```
 
 2. **Install server dependencies**
